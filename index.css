@@ -1,5 +1,4 @@
 /* -------Page Setup------- */
-
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +7,7 @@ body {
   min-height: 100vh;
   align-items: center;
   background: #f4f4f4;
+  font-family: "Roboto", sans-serif;
 }
 
 html{
@@ -96,6 +96,22 @@ ul.header-list {
   }
   
 
+/* -------Hamburger Menu------- */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+
 /* -------Title Box------- */
 .title, .project {
   width: 100%;
@@ -112,10 +128,8 @@ ul.header-list {
 }
 
 .name-header {
-  font-size: 2em;
   font-weight: bold;
   color: #333;
-  font-weight: bold;
   font-size: 3em;
   font-family: "Roboto", sans-serif, monospace;
 }
@@ -516,17 +530,255 @@ form .btn2_contact{
     font-family: "Roboto", sans-serif;
 }
 
-
+/* -------Hamburger Menu------- */
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+  }
 
 
 /* --------- Media Queries --------- */
-@media only screen and (max-width: 600px){
-        .memoji{
-            background-image: url("pictures/phone.png");
-            width: 300px;
-        }
 
-        .title-header > p{
-            font-size: 1.2em;
-        }
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0 15px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    /* Standardize header sizes */
+    h1, .name-header, .sub-title, .project-sub-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    h2, .experience-sub-title, .project-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    body {
+        background: #fff;
+    }
+
+    /* Adjust other text elements for consistency */
+    p, .tab-links, .tab-contents ul li {
+        font-size: 16px;
+    }
+
+    /* Ensure consistent spacing between sections */
+    .title, .project, #about, #technologies, #projects-section, #contact {
+    margin-bottom: 30px;
+    }
+
+    .container {
+    width: 95%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    }
+
+    .title {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    }
+
+    .title-header {
+        width: 100%;
+    }
+    
+
+    .title-icons {
+        width: 100%;
+        justify-content: center;
+        margin: 20px 0 0 0;
+    }
+
+    .icon {
+        width: 48px;
+        height: 48px;
+        margin: 5px;
+    }
+
+    .name-header {
+        font-size: 2em;
+        word-break: break-word;
+    }
+
+    .memoji {
+        width: 250px;
+        height: 250px;
+    }
+
+    #about {
+        padding: 100px 0px 50px 0px;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .about-col-1 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .sub-title {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .tab-titles {
+        flex-wrap: wrap;
+    }
+
+    .about-col-2 {
+        margin-top: 30px;
+    }
+
+    .tab-links {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    
+      .about-container {
+        flex-direction: column;
+    }
+    
+      .details-container {
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+    margin-bottom: 10px;
+    }
+
+    .contact-left, .contact-right {
+    flex-basis: 100%;
+    }
+
+    form input, form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    }
+    
+    .hamburger {
+    display: block;
+    margin-right: 15px;
+    padding: 5px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    }
+
+    ul.header-list {
+        position: fixed;
+        left: -100%;
+        top: 65px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+  
+    ul.header-list.active {
+        left: 0;
+    }
+  
+    .header-list li {
+        margin: 16px 0;
+    }
+
+    .row {
+      flex-direction: column;
+  }
+
+  
+
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+      }
+    
+      .name-header {
+        font-size: 1.5em;
+      }
+    
+      .title-header > p {
+        font-size: 1em;
+      }
+    
+      .icon {
+        width: 40px;
+        height: 40px;
+      }
+    
+      .sub-title {
+        font-size: 1.5em;
+      }
+    
+      .tab-links {
+        margin-right: 10px;
+        font-size: 14px;
+      }
+    
+      .btn {
+        padding: 0.6rem;
+        width: 6rem;
+        font-size: 0.8rem;
+      }
+    
+      .btn_contact {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+      }
+    
+      .memoji {
+        width: 200px;
+        height: 200px;
+      }
 }
