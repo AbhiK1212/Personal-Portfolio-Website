@@ -632,6 +632,11 @@ form .btn2_contact{
         padding: 100px 0px 50px 0px;
     }
 
+    #projects-section{
+        position: relative;
+        padding: 0px 0px 100px 0px;
+    }
+
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
         padding: 10px;
