@@ -31,7 +31,13 @@
           <div class="typing-animation">
             <h1 class="name-header">Hi, I'm Abhi 🤙🏾</h1>
           </div>
-          <p>Software Developer | Student | Entrepreneur.</p>
+          <p>
+            <span class="title-word">Software Developer</span>
+            <span class="separator">|</span>
+            <span class="title-word">Student</span>
+            <span class="separator">|</span>
+            <span class="title-word">Entrepreneur.</span>
+          </p>
         </div>
         <div class="title-icons">
           <a
@@ -84,34 +90,45 @@
                 <p>
                   I'm a software developer attending the University of Massachusetts-Amherst. My passion lies in technology and entrepreneurship, and I'm always eager to learn and innovate. Beyond academics, I run my own Amazon FBA business and dabble in trading. When I'm not immersed in tech or business, you'll find me in the gym 💪🏽 shooting hoops 🏀 or exploring the outdoors🏕️. </p>
                 <div class="tab-titles">
-                  <p class="tab-links active-link" onclick="opentab('skills')">
-                    Skills
-                  </p>
-                  <p class="tab-links" onclick="opentab('experience')">
+                  <p class="tab-links active-link" onclick="opentab('experience')">
                     Experience
                   </p>
+                  <p class="tab-links " onclick="opentab('skills')">
+                    Skills
+                  </p>
+                  
                   <p class="tab-links" onclick="opentab('education')">
                     Education
                   </p>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+
+                <div id="experience" class="tab-contents active-tab">
                   <ul>
                     <li>
-                      <span>Full Stack Development</span><br />Javascript, React.js, MongoDB, AWS Cloud. Node.js
+                      <span class="experience-date">June 2024 - August 2024</span>
+                      <strong class="experience-title">HaverAI</strong>
+                      <p class="experience-description">Developing open-source full-stack healthcare predictive analysis application using React, Typescript, and Amazon Web Services</p>
                     </li>
                     <li>
-                      <span>Web Development</span><br />Web App Development
-                    </li>
-                    <li>
-                      <span>Robotics</span><br />VEX Robotics/First Tech Challenge + Robot C
+                      <span class="experience-date">December 2023 - Current</span>
+                      <strong class="experience-title">Amazon FBA Seller</strong>
+                      <p class="experience-description">Responsibilities include product sourcing, inventory management, listing optimization, and customer service.</p>
                     </li>
                   </ul>
                 </div>
+                
+                
 
-                <div class="tab-contents" id="experience">
+                <div class="tab-contents " id="skills">
                   <ul>
                     <li>
-                      <span>2023 - Current</span><br />Amazon FBA Seller
+                      <span>Full Stack Development</span><br/>React, Node.js, Express.js, Next.js, MongoDB, AWS, GCP
+                    </li>
+                    <li>
+                      <span>Mobile Development</span><br />Flutter, Dart, Firebase, Android Studio, Xcode
+                    </li>
+                    <li>
+                      <span>Robotics</span><br />VEX Robotics/First Tech Challenge, Arduino, Robot C, Python
                     </li>
                   </ul>
                 </div>
@@ -131,68 +148,102 @@
             <div id="technologies">
               <h1 class="sub-title">Technologies</h1>
               <div class="technology-pictures">
-                <!-- Technology images -->
-                <img
-                  class="icon"
-                  src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Java.png"
-                  alt="Java"
-                />
-                <img
-                  class="icon"
-                  src="https://static-00.iconduck.com/assets.00/c-letter-icon-256x256-jgswh4pc.png"
-                  alt="C"
-                />
-                <img
-                  class="icon"
-                  src="https://stevedower.gallerycdn.vsassets.io/extensions/stevedower/python/0.19036.6/1549342496012/Microsoft.VisualStudio.Services.Icons.Default"
-                  alt="Python"
-                />
-                <img
-                  class="icon"
-                  src="https://images.vexels.com/media/users/3/166253/isolated/lists/14bc03b7b1c2c4e2656fd4c0a981cbbc-cpp-programming-language-icon.png"
-                  alt="C++"
-                />
-                <img
-                  class="icon"
-                  src="https://chrisandjimcim.com/wp-content/uploads/2016/06/robotClogo.png"
-                  alt="Robotc"
-                />
-                <img
-                  class="icon"
-                  src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
-                  alt="HTML"
-                />
-                <img
-                class="icon"
-                src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
-                alt="CSS"
-                />
-                <img
-                  class="icon"
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                  alt="React"
-                />
-                <img
-                  class="icon"
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
-                  alt="MongoDB"
-                />
-                <img
-                  class="icon"
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg"
-                  alt="Javascript"
-                />
-                <img
-                  class="icon"
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-                  alt="AWS Cloud"
-                />
-                <img
-                  class="icon"
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                  alt="Node.js"
-                />
-                <!-- Add more images as needed -->
+                <div class="tech-icon-container">
+                  <img src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Java.png" alt="Java" class="icon">
+                  <span class="tech-tooltip">Java</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://static-00.iconduck.com/assets.00/c-letter-icon-256x256-jgswh4pc.png" alt="C" class="icon">
+                  <span class="tech-tooltip">C</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://images.vexels.com/media/users/3/166253/isolated/lists/14bc03b7b1c2c4e2656fd4c0a981cbbc-cpp-programming-language-icon.png" alt="C++" class="icon">
+                  <span class="tech-tooltip">C++</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg" alt="Python" class="icon">
+                  <span class="tech-tooltip">Python</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML" class="icon">
+                  <span class="tech-tooltip">HTML</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS" class="icon">
+                  <span class="tech-tooltip">CSS</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="icon">
+                  <span class="tech-tooltip">Tailwind CSS</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" alt="JavaScript" class="icon">
+                  <span class="tech-tooltip">JavaScript</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript" class="icon">
+                  <span class="tech-tooltip">TypeScript</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="icon">
+                  <span class="tech-tooltip">React</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="pictures/node-js.svg" alt="Node.js" class="icon">
+                  <span class="tech-tooltip">Node.js</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000" alt="Express.js" class="icon">
+                  <span class="tech-tooltip">Express.js</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="pictures/next-js.svg" alt="Next.js" class="icon">
+                  <span class="tech-tooltip">Next.js</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Dart_programming_language_logo_icon.svg" alt="Dart" class="icon">
+                  <span class="tech-tooltip">Dart</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="pictures/flutter.svg" alt="Flutter" class="icon">
+                  <span class="tech-tooltip">Flutter</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/FFmpeg_icon.svg" alt="FFmpeg" class="icon">
+                  <span class="tech-tooltip">FFmpeg</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow" class="icon">
+                  <span class="tech-tooltip">TensorFlow</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas" class="icon">
+                  <span class="tech-tooltip">Pandas</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="Node.js" class="icon">
+                  <span class="tech-tooltip">AWS Cloud</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Google-cloud-platform.svg" alt="Google Cloud Platform" class="icon">
+                  <span class="tech-tooltip">Google Cloud Platform</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="pictures/mongodb.svg" alt="MongoDB" class="icon">
+                  <span class="tech-tooltip">MongoDB</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="pictures/docker.svg" alt="Docker" class="icon">
+                  <span class="tech-tooltip">Docker</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VSCode" class="icon">
+                  <span class="tech-tooltip">VSCode</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github" class="icon">
+                  <span class="tech-tooltip">Github</span>
+                </div>
               </div>
             </div>
           </div>
@@ -203,9 +254,42 @@
           <h1 class="project-sub-title">Projects</h1>
           <div class="experience-details-container">
             <div class="about-container">
+
             <div class="details-container color-container">
               <div class="article-container">
-                <img src="pictures/dormbuddy.jpeg" alt="Project 1" class="project-img">
+                <img src="pictures/WorldWide.jpeg" alt="Project 1" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">WorldWide 🌎</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/AbhiK1212/WorldWide'">
+                  Github <i class="fa-brands fa-github"></i>
+                </button>
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://abhik1212.github.io/Personal-Portfolio-Website/'">
+                  Download <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="pictures/spark.png" alt="Project 2" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">Spark ⚡️</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/AbhiK1212/Spark'">
+                  Github <i class="fa-brands fa-github"></i>
+                </button>
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://abhik1212.github.io/Personal-Portfolio-Website/'">
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="pictures/dormbuddy.jpeg" alt="Project 3" class="project-img">
               </div>
               <h2 class="experience-sub-title project-title">Dorm Buddy 🤖</h2>
               <div class="btn-container">
@@ -221,7 +305,7 @@
             </div>
             <div class="details-container color-container">
               <div class="article-container">
-                <img src="pictures/hi.jpeg" alt="Project 2" class="project-img">
+                <img src="pictures/hi.jpeg" alt="Project 4" class="project-img">
               </div>
               <h2 class="experience-sub-title project-title">Personal Website 🔗</h2>
               <div class="btn-container">
@@ -235,9 +319,10 @@
                 </button>
               </div>
             </div>
+
             <div class="details-container color-container">
               <div class="article-container">
-                <img src="pictures/Comingsoon.png" alt="Project 3" class="project-img">
+                <img src="pictures/Comingsoon.png" alt="Project 5" class="project-img">
               </div>
               <h2 class="experience-sub-title project-title">TicketBot🎫 </h2>
               <div class="btn-container">

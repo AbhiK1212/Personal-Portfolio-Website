@@ -286,14 +286,39 @@ ul.header-list {
     display: block;
 }
 
+/* Experience Section Styles */
+
+#experience ul li {
+  list-style: none;
+ 
+  padding: 0;
+}
+
+#experience ul li:last-child {
+  margin-bottom: 0;
+}
+
+#experience .experience-date {
+  display: block;
+  color: #ff0051;
+  font-size: 14px;
+}
+
+#experience .experience-title {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#experience .experience-description {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+
 
 
 /* -------Projects Section------- */
-
-/*
-#project-section {
-}
-*/
 
 #projects-section{
     position: relative;
@@ -305,15 +330,17 @@ ul.header-list {
     background: rgb(250,250,250);
 }
 
-.about-container{
-    display: flex;
-    gap: 1rem;
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.project-img{
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+.project-img {
+  width: 90%;
+  height: 90%;
+  border-radius: 1rem;
 }
 
 .project-title{
@@ -376,13 +403,15 @@ ul.header-list {
     gap: 1rem;
 }
 
-.details-container{
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: 4px solid #333;
-    text-align: center;
+.details-container {
+  flex: 0 0 calc(33.333% - 1rem);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: 4px solid #333;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .experience-details-container{
@@ -398,6 +427,11 @@ ul.header-list {
     margin-bottom: 2rem;
 }
 
+.experience-sub-title.project-title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
 .article-container{
     display: flex;
     text-align: initial;
@@ -406,6 +440,51 @@ ul.header-list {
     gap: 2.5rem;
     justify-content: space-around;
 }
+
+/* -------Technologies Section------- */
+.technology-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .tech-icon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tech-tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tech-icon-container:hover .tech-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .tech-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+  }
 
 /* -------Contact Section------- */
 
@@ -739,8 +818,33 @@ form .btn2_contact{
       flex-direction: column;
   }
 
-  
+  .title-header p {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
 
+  .title-header .title-word {
+    display: block;
+    margin-bottom: 5px;  /* Adds space between words */
+  }
+
+  .title-header .separator {
+    display: none;
+  }
+ 
+  .tech-tooltip {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: block;
+    margin: 5px 0 0 0;
+    width: auto;
+  }
+
+  .tech-tooltip::after {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {
