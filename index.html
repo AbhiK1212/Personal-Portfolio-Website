@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhi's Site</title>
     <link rel="stylesheet" href="index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/207b546a52.js" crossorigin="anonymous"></script>  
   </head>
   <body>
@@ -82,10 +83,10 @@
         <div id="about">
           <div class="contain">
             <div class="row">
-              <div class="about-col-1">
+              <div class="about-col-1" data-aos="fade-right" data-aos-duration="1000">
                 <img src="pictures/image.png" />
               </div>
-              <div class="about-col-2">
+              <div class="about-col-2" data-aos="fade-left" data-aos-duration="1000">
                 <h1 class="sub-title">About Me</h1>
                 <p>
                   I'm a software developer attending the University of Massachusetts-Amherst. My passion lies in technology and entrepreneurship, and I'm always eager to learn and innovate. Beyond academics, I run my own Amazon FBA business and dabble in trading. When I'm not immersed in tech or business, you'll find me in the gym 💪🏽 shooting hoops 🏀 or exploring the outdoors🏕️. </p>
@@ -105,9 +106,14 @@
                 <div id="experience" class="tab-contents active-tab">
                   <ul>
                     <li>
-                      <span class="experience-date">June 2024 - August 2024</span>
-                      <strong class="experience-title">HaverAI</strong>
-                      <p class="experience-description">Developing open-source full-stack healthcare predictive analysis application using React, Typescript, and Amazon Web Services</p>
+                      <span class="experience-date">May 2025 - August 2025</span>
+                      <strong class="experience-title">Software Engineer Intern, Intuit Credit Karma</strong>
+                      <p class="experience-description">Engineered a swipeable card stack component in Kotlin/XML for the main dashboard serving 50M+ monthly active users, delivering a +0.13% lift in Retained Monthly Members. Architected a GraphQL to MVVM data pipeline and launched a previously iOS-exclusive feature on Android with an estimated $2M+ ARR impact.</p>
+                    </li>
+                    <li>
+                      <span class="experience-date">June 2024 - September 2024</span>
+                      <strong class="experience-title">Software Engineer Intern, HaverAI</strong>
+                      <p class="experience-description">Engineered an open-source healthcare predictive analysis platform using React, AWS, and SageMaker. Architected 10+ RESTful APIs with API Gateway and Lambda, and optimized an S3-based data archiving solution, reducing long-term storage costs by ~30%.</p>
                     </li>
                     <li>
                       <span class="experience-date">December 2023 - Current</span>
@@ -117,18 +123,19 @@
                   </ul>
                 </div>
                 
-                
-
                 <div class="tab-contents " id="skills">
                   <ul>
                     <li>
-                      <span>Full Stack Development</span><br/>React, Node.js, Express.js, Next.js, MongoDB, AWS, GCP
+                      <span>Languages</span><br/>Python, Kotlin, Swift, Java, TypeScript, SQL, Go, C/C++
                     </li>
                     <li>
-                      <span>Mobile Development</span><br />Flutter, Dart, Firebase, Android Studio, Xcode
+                      <span>AI & Machine Learning</span><br/>PyTorch, Scikit-Learn, Pandas, TensorFlow, Hugging Face, NLP, Computer Vision
                     </li>
                     <li>
-                      <span>Robotics</span><br />VEX Robotics/First Tech Challenge, Arduino, Robot C, Python
+                      <span>Full-Stack & Mobile</span><br/>React, Node.js, Next.js, FastAPI, GraphQL, Flutter, Android SDK
+                    </li>
+                     <li>
+                      <span>Cloud & DevOps</span><br/>AWS, GCP, Docker, CI/CD, Jenkins, Prometheus, Grafana, Splunk
                     </li>
                   </ul>
                 </div>
@@ -136,7 +143,7 @@
                 <div class="tab-contents" id="education">
                   <ul>
                     <li>
-                      <span>2023 - Present</span><br/>BS in Computer Science at UMass Amherst
+                      <span>2023 - 2027</span><br/>BS in Computer Science at UMass Amherst
                     </li>
                     <li><span>2019 - 2023</span><br/>Franklin High School</li>
                   </ul>
@@ -145,7 +152,7 @@
             </div>
 
             <!-- Technologies Section -->
-            <div id="technologies">
+            <div id="technologies" data-aos="fade-up" data-aos-duration="1000">
               <h1 class="sub-title">Technologies</h1>
               <div class="technology-pictures">
                 <div class="tech-icon-container">
@@ -153,7 +160,11 @@
                   <span class="tech-tooltip">Java</span>
                 </div>
                 <div class="tech-icon-container">
-                  <img src="https://static-00.iconduck.com/assets.00/c-letter-icon-256x256-jgswh4pc.png" alt="C" class="icon">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin" class="icon">
+                  <span class="tech-tooltip">Kotlin</span>
+                </div>
+                <div class="tech-icon-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg" alt="C" class="icon">
                   <span class="tech-tooltip">C</span>
                 </div>
                 <div class="tech-icon-container">
@@ -201,6 +212,10 @@
                   <span class="tech-tooltip">Next.js</span>
                 </div>
                 <div class="tech-icon-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" alt="GraphQL" class="icon">
+                    <span class="tech-tooltip">GraphQL</span>
+                </div>
+                <div class="tech-icon-container">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Dart_programming_language_logo_icon.svg" alt="Dart" class="icon">
                   <span class="tech-tooltip">Dart</span>
                 </div>
@@ -213,15 +228,19 @@
                   <span class="tech-tooltip">FFmpeg</span>
                 </div>
                 <div class="tech-icon-container">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow" class="icon">
-                  <span class="tech-tooltip">TensorFlow</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow" class="icon">
+                    <span class="tech-tooltip">TensorFlow</span>
+                </div>
+                <div class="tech-icon-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg" alt="PyTorch" class="icon">
+                    <span class="tech-tooltip">PyTorch</span>
                 </div>
                 <div class="tech-icon-container">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas" class="icon">
                   <span class="tech-tooltip">Pandas</span>
                 </div>
                 <div class="tech-icon-container">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="Node.js" class="icon">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Cloud" class="icon">
                   <span class="tech-tooltip">AWS Cloud</span>
                 </div>
                 <div class="tech-icon-container">
@@ -235,6 +254,10 @@
                 <div class="tech-icon-container">
                   <img src="pictures/docker.svg" alt="Docker" class="icon">
                   <span class="tech-tooltip">Docker</span>
+                </div>
+                <div class="tech-icon-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Prometheus_software_logo.svg" alt="Prometheus" class="icon">
+                    <span class="tech-tooltip">Prometheus</span>
                 </div>
                 <div class="tech-icon-container">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VSCode" class="icon">
@@ -251,11 +274,54 @@
 
         <!-- Projects Section -->
         <div id="projects-section">
-          <h1 class="project-sub-title">Projects</h1>
-          <div class="experience-details-container">
-            <div class="about-container">
+          <h1 class="project-sub-title" data-aos="fade-up">Projects</h1>
+          
+          <div class="project-filter-container" data-aos="fade-up" data-aos-delay="100">
+            <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+            <button class="filter-btn" onclick="filterProjects('ai-ml')">🤖 AI/ML</button>
+            <button class="filter-btn" onclick="filterProjects('mobile')">📱 Mobile</button>
+            <button class="filter-btn" onclick="filterProjects('full-stack')">🌐 Full-Stack</button>
+            <button class="filter-btn" onclick="filterProjects('iot')">⚡ IoT</button>
+          </div>
 
-            <div class="details-container color-container">
+          <div class="experience-details-container">
+            <div class="about-container" id="projects-container">
+
+            <div class="details-container color-container project-item visible" data-category="ai-ml full-stack" data-aos="fade-up" data-aos-delay="200">
+              <div class="article-container">
+                <img src="pictures/finsight.png" alt="FinSight Project" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">FinSight 📈</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/AbhiK1212/FinSight'">
+                  Github <i class="fa-brands fa-github"></i>
+                </button>
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/AbhiK1212/FinSight#demo'">
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container project-item visible" data-category="ai-ml mobile" data-aos="fade-up" data-aos-delay="300">
+              <div class="article-container">
+                <img src="pictures/foundu.png" alt="FoundU Project" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">FoundU 🏆</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/AbhiK1212/FoundU'">
+                  Github <i class="fa-brands fa-github"></i>
+                </button>
+                <button class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://devpost.com/software/foundu'">
+                  Devpost <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="details-container color-container project-item visible" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
               <div class="article-container">
                 <img src="pictures/WorldWide.jpeg" alt="Project 1" class="project-img">
               </div>
@@ -271,7 +337,7 @@
                 </button>
               </div>
             </div>
-            <div class="details-container color-container">
+            <div class="details-container color-container project-item visible" data-category="full-stack" data-aos="fade-up" data-aos-delay="500">
               <div class="article-container">
                 <img src="pictures/spark.png" alt="Project 2" class="project-img">
               </div>
@@ -287,7 +353,7 @@
                 </button>
               </div>
             </div>
-            <div class="details-container color-container">
+            <div class="details-container color-container project-item visible" data-category="iot full-stack" data-aos="fade-up" data-aos-delay="600">
               <div class="article-container">
                 <img src="pictures/dormbuddy.jpeg" alt="Project 3" class="project-img">
               </div>
@@ -303,7 +369,7 @@
                 </button>
               </div>
             </div>
-            <div class="details-container color-container">
+            <div class="details-container color-container project-item visible" data-category="web" data-aos="fade-up" data-aos-delay="700">
               <div class="article-container">
                 <img src="pictures/hi.jpeg" alt="Project 4" class="project-img">
               </div>
@@ -320,28 +386,12 @@
               </div>
             </div>
 
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img src="pictures/Comingsoon.png" alt="Project 5" class="project-img">
-              </div>
-              <h2 class="experience-sub-title project-title">TicketBot🎫 </h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" 
-                onclick="location.href=''">
-                  Github <i class="fa-brands fa-github"></i>
-                </button>
-                <button class="btn btn-color-2 project-btn" 
-                onclick="location.href=''">
-                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </button>
-              </div>
-            </div>
           </div>
           </div>
       </div>
 
         <!-- Contact -->
-        <div id="contact">
+        <div id="contact" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
               <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
@@ -374,10 +424,16 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- JavaScript -->
     <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+      });
 
-      // Hamburger Menu
       const hamburger = document.querySelector(".hamburger");
       const headerList = document.querySelector(".header-list");
 
@@ -406,15 +462,32 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
 
-      // Get the cursor element
+      function filterProjects(category) {
+        const projects = document.querySelectorAll('.project-item');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+        
+        projects.forEach((project) => {
+          const categories = project.getAttribute('data-category');
+          const shouldShow = category === 'all' || categories.includes(category);
+          
+          if (shouldShow) {
+            project.classList.remove('hidden');
+            project.classList.add('visible');
+          } else {
+            project.classList.remove('visible');
+            project.classList.add('hidden');
+          }
+        });
+      }
+
       const cursor = document.querySelector(".typing-animation > h1");
+      const totalAnimationDuration = (2 + 0.5 + 2) * 1000;
 
-      // Calculate the total duration of both animations
-      const totalAnimationDuration = (2 + 0.5 + 2) * 1000; // Convert seconds to milliseconds
-
-      // Hide the cursor after the total animation duration
       setTimeout(() => {
-        cursor.style.borderRight = "none"; // Set border-right to none to hide the cursor
+        cursor.style.borderRight = "none";
       }, totalAnimationDuration);
 
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwvVPePi4CsErOf9b5QwOrUULsekREfyqWYslA5Cc2RyPKgcl5yz5IE8Y0zBy4bxTmo8g/exec'
